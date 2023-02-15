@@ -1,0 +1,288 @@
+body {
+  background: #fff;
+  height: 100%;
+  /* width: 100%; */
+}
+
+.pilot {
+  border-radius: 10px;
+  object-fit: contain;
+  width: fit-content;
+  height: 600px;
+}
+
+.heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #101010;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.pagecontent1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #8c91a2;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.btnText {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.chatBubble {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  isolation: isolate;
+  position: fixed;
+  height: 60px;
+  left: 90%;
+  right: 3rem;
+  bottom: 30px;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 2;
+}
+
+a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.cardArea {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-end; */
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+
+  width: 100%;
+  height: 600px;
+  overflow-x: scroll;
+
+  /* Neutral/Light Grey */
+
+  background: #f7f7f7;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.serviceCards {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 30px;
+
+  width: 250px;
+  height: 520px;
+
+  /* Neutral/White */
+
+  background: #ffffff;
+  /* Primary/Red */
+
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.cardHeadings {
+  width: 250px;
+  height: 36px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+
+  color: #101010;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.amtText {
+  width: 36px;
+  height: 108px;
+
+  /* Inter/Bold/Type@72 */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 150%;
+  color: #101010;
+}
+.euro {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 300%;
+  color: #101010;
+}
+
+.addService {
+  background: #f7f7f7;
+  border-radius: 10px;
+}
+.addServiceModal {
+  position: absolute !important;
+  top: 30rem;
+  right: 50%;
+}
+
+.font-size-14 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+}
+.font-size-18 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.square {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+.selectedSquare {
+  background: #dd1e28;
+}
+.unselectedSquare {
+  background: #ededed;
+}
+.calendarArea {
+  background: white;
+  box-shadow: 4px 4px 250px rgba(68, 68, 79, 0.12);
+  border-radius: 10px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+
+  width: 100%;
+  height: 520px;
+}
+
+.headingCalendar {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.formHeading{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.padding-right-2{
+    padding-right: 2rem;
+}
+
+.formlength{
+    background: white;
+  box-shadow: 4px 4px 250px rgba(68, 68, 79, 0.12);
+  border-radius: 10px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+
+  width: 100%;
+  height: 1300px;
+}
+
+.formArea{
+    /* display: flex;
+  flex-direction: row; */
+  /* justify-content: flex-end; */
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+
+  width: 100%;
+  height: 600px;
+  overflow-x: scroll;
+
+  /* Neutral/Light Grey */
+
+  background: #f7f7f7;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+}
+@media screen and (min-width: 1440px) {
+  .chatBubble {
+    left: 95%;
+    bottom: 20px;
+  }
+}
