@@ -114,6 +114,7 @@ function generateCalendar() {
         // Adiciona a linha na tabela
         table.appendChild(tr);
 
+        // Cria uma nova linha para ser usada
         tr = document.createElement("tr");
 
         // Reseta o contador de dias da semana
@@ -164,17 +165,20 @@ function changeActive() {
     }
 }
 
+// Função que pega a data atual
 function resetDate() {
     date = new Date();
     generateCalendar();
 }
 
+// Muda a data pelo numero do botão clicado
 function changeDate(button) {
     let newDay = parseInt(button.textContent);
     date = new Date(date.getFullYear(), date.getMonth(), newDay);
     generateCalendar();
 }
 
+// Funções de avançar e retroceder mês e dia
 function nextMonth() {
     date = new Date(date.getFullYear(), date.getMonth() + 1, 1);
     generateCalendar(date);
